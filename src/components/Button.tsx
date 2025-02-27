@@ -9,14 +9,17 @@ const Buttons = styled.button`
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    text-transform: uppercase;
 `;
 
-const Button = () => {
-    const handleClick = () => {
-        console.log("Button Clicked"); 
-    }
+type ButtonProps = {
+    name: string;
+    handleClick: () => void;
+}
+
+const Button = (props: ButtonProps) => {
     return (
-        <Buttons onClick={handleClick}>Click Me</Buttons>
+        <Buttons onClick={props.handleClick}>{props.name}</Buttons>
     )
 }
 
