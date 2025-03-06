@@ -2,7 +2,6 @@
 import quoteLeftIcon from "../assets/quoteLeft.svg";
 import quoteRightIcon from "../assets/quoteRight.svg";
 import styled from 'styled-components';
-import { useMediaQuery } from "react-responsive";
 
 
 
@@ -37,7 +36,8 @@ const Quotecontainerimg = styled.img`
   width: 36px;
 
   @media screen and (max-width: 700px) {
-    padding: 100px
+     display: none;
+    padding: 100px;
 
   }
 `

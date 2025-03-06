@@ -1,15 +1,10 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
-import Quotecard from './page/quote-card';
+import QuoteContainer from './component/Details';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-     <Quotecard></Quotecard>
+     <QuoteContainer />
     </>
   )
 }
