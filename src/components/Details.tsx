@@ -7,6 +7,7 @@ import styled from 'styled-components';
 
 const Author = styled.p`
  color : #2856C3 !important ;
+ 
 
 `
 const MainCard = styled.div`
