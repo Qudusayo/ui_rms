@@ -7,33 +7,45 @@ import styled from 'styled-components';
 
 const Author = styled.p`
  color : #2856C3 !important ;
- 
-
+ text-align: center;
 `
 const MainCard = styled.div`
-    width: 100%;
   background-color: #E4F1FF;
-  padding: 40px 0px;
+  padding: 40px 20px;
 `
 const Quote = styled.p`
    font-size: 26px;
   width: 870px;
   color: #313033;
   margin: 20px ;
+  margin: auto;
+  text-align: center;
   font-weight: 400;
 `
 const HeadingName = styled.span `
     font-size: 16px;
     padding: 10px;
 `
-const Quotecontainer = styled.div`
-    display: flex;
-  flex-direction: row;
+const Container = styled.div`
+  display: flex;
   justify-content: space-between;
   padding: 10px;
+  text-align: center;
+`
+
+const Left = styled.img`
+//  position: absolute;
+ transform: translateY(-50%);
+ top: -50%;
+`
+const Right = styled.img`
+//  position: absolute;
+//  transform: translateX(-100%);
+//  left: 100%;
+//  top: 25%;
 `
 const Quotecontainerimg = styled.img`
-   padding: 9px 10px;
+ padding: 9px 10px;
   width: 36px;
 
   @media screen and (max-width: 700px) {
@@ -49,15 +61,15 @@ const QuoteContainer =() => {
         <>
             <HeadingName>Welcome, Ayoola AbdulQudus</HeadingName>
             <MainCard>
-                <Quotecontainer>
-                    <Quotecontainerimg src={quoteLeftIcon} alt="" />
-                    <Quotecontainerimg src={quoteRightIcon} alt="" />
-                </Quotecontainer>
+                <Container>
+                    <Left src={quoteLeftIcon} alt=""/>
+                    <div>
+                        <Quote>"What makes a child gifted and talented may not always be good grades in school, but a different way of looking at the world and learning."</Quote>
+                        <Author>Chuck Grassley</Author>
+                    </div>
+                    <Right src={quoteRightIcon} alt="" />
+                </Container>
 
-                <div>
-                    <Quote>"What makes a child gifted and talented may not always be good grades in school, but a different way of looking at the world and learning."</Quote>
-                    <Author>Chuck Grassley</Author>
-                </div>
             </MainCard>
         </>
     )

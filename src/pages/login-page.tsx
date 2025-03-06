@@ -1,3 +1,7 @@
+import QuoteContainer from "../components/Details";
+
 export const LoginPage = () => {
-  return <div>LoginPage</div>;
+  return <div>
+    <QuoteContainer />
+  </div>;
 };
