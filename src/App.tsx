@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router";
 import { LoginPage } from "./pages/login-page";
 import { PasswordResetPage } from "./pages/password-reset";
 import { ConfirmEmailPage } from "./pages/confirm-email";
+import { DashboardPage } from "./pages/dashboard";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Route index element={<LoginPage />} />
       <Route path="password-reset" element={<PasswordResetPage />} />
       <Route path="confirm-email" element={<ConfirmEmailPage />} />
+      <Route path="dashboard" element={<DashboardPage />} />
     </Routes>
   );
 }
