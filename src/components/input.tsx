@@ -9,6 +9,8 @@ const Input = styled.input`
     color: #000000;
     border: 1px solid #E6E1E5;
     border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
 `
 const Container = styled.div`
     position: relative;
