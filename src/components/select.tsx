@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const Select = styled.select`
     height: 3.5em;
-    max-width: 50%;
+    width: 100%;
     border: 1px solid blue;
     border-radius: 5px;
     cursor: pointer;
@@ -18,7 +18,7 @@ const Select = styled.select`
     background-position-y: 20px;  
     margin: 0.3em auto 2em;
     padding-right: 1rem;
-    padding-left: 2rem
+    padding-left: 2rem;
     outline: none;
     
 `
@@ -34,8 +34,5 @@ const SelectComponent = () => {
         </Select>
     )
 }
-
-// cd ui_rms-main
-// npm run dev
 
 export default SelectComponent
