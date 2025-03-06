@@ -8,13 +8,13 @@ const Input = styled.input`
     font-family: Proxima Nova;
     color: #000000;
     width: 100%;
+    border: 1px solid #E6E1E5;
+    border-radius: 8px;
 `
 const Container = styled.div`
-    border: 1px solid #E6E1E5;
-    width: 320px;
-    line-height: 18.27px,
+    max-width: 320px;
+    line-height: 18.27px;
     height: 24px;
-    border-radius: 8px;
     margin: 20px;
     position: relative;
 `
