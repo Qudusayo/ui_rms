@@ -7,16 +7,12 @@ const Input = styled.input`
     font-size: 15px;
     font-family: Proxima Nova;
     color: #000000;
-    width: 100%;
     border: 1px solid #E6E1E5;
     border-radius: 8px;
 `
 const Container = styled.div`
-    max-width: 320px;
-    line-height: 18.27px;
-    height: 24px;
-    margin: 20px;
     position: relative;
+    margin-top: 10px;
 `
 const Label = styled.label`
     position: absolute;
@@ -32,7 +28,7 @@ type InputProps = {
     placeholder: string
 }
 
-const InputPage = (props: InputProps) => {
+const InputContainer = (props: InputProps) => {
     return (
         <Container>
             <Label>{props.name}</Label>
@@ -42,4 +38,4 @@ const InputPage = (props: InputProps) => {
 }
 
 
-export default InputPage
+export default InputContainer
