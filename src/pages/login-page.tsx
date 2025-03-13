@@ -4,7 +4,8 @@ import { Link } from "react-router";
 import Button from "../components/Button";
 
 const FormContainer = styled.section`
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
   margin: 0px auto;
   text-align: center;
 `;
@@ -23,8 +24,26 @@ const Pg = styled.p`
 `;
 
 const InputSide = styled.div`
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;
+
+const FormFooter = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const CheckboxContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`;
+
+const ButtonWrapper = styled.div`
+  margin: 20px auto;
+`
 
 export const LoginPage = () => {
   return <FormContainer>
@@ -32,12 +51,19 @@ export const LoginPage = () => {
     <Pg>Input your matric number and your student’s portal’s password to access your results</Pg>
     <form action="#">
       <InputSide>
-      <InputContainer name="Matric Number" placeholder="Input your Matric number here" />
-      <InputContainer name="Password" placeholder="Input your password" />
+        <InputContainer name="Matric Number" placeholder="Input your Matric number here" />
+        <InputContainer name="Password" placeholder="Input your password" />
       </InputSide>
-      <Button name="Login"/>
-      <input type="checkbox" /> <span>Remind me</span>
-      <Link to="/password-reset" style={{ marginLeft: "50%" }}>Forgot password?</Link>
+      <ButtonWrapper>
+        <Button name="Login" handleClick={() => console.log("Logging in")} />
+      </ButtonWrapper>
+      <FormFooter>
+        <CheckboxContainer>
+          <input type="checkbox" />
+          <span>Remind me</span>
+        </CheckboxContainer>
+        <Link to="/password-reset">Forgot password?</Link>
+      </FormFooter>
     </form>
 
   </FormContainer>;
