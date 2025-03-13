@@ -21,6 +21,8 @@ const Quote = styled.p`
 const HeadingName = styled.span`
   font-size: 22px;
   padding: 10px;
+  display: inline-block;
+  margin: 10px;
 `;
 const Container = styled.div`
   display: flex;
