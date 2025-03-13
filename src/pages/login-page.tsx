@@ -19,8 +19,9 @@ const H1 = styled.h1`
 const Pg = styled.p`
   font-size: 1.05rem;
   letter-spacing: 0.25%;
-  padding: 0 100px;
   font-weight: 400;
+  max-width: 300px;
+  margin: 0 auto 20px;
 `;
 
 const InputSide = styled.div`
@@ -45,6 +46,14 @@ const ButtonWrapper = styled.div`
   margin: 20px auto;
 `;
 
+const CustomLink = styled(Link)`
+  text-decoration: none;
+  color: #2856c3;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+`;
+
 export const LoginPage = () => {
   return (
     <FormContainer>
@@ -63,7 +72,7 @@ export const LoginPage = () => {
             <input type="checkbox" />
             <span>Remind me</span>
           </CheckboxContainer>
-          <Link to="/password-reset">Forgot password?</Link>
+          <CustomLink to="/password-reset">Forgot password?</CustomLink>
         </FormFooter>
       </form>
     </FormContainer>
