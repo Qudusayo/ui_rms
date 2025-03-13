@@ -8,11 +8,6 @@ const Container = styled.section`
   max-width: 480px;
   margin: auto;
   box-sizing: border-box;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-
 `
 const H1 = styled.h1`
   text-align: center;
@@ -40,7 +35,7 @@ const ButtonWrapper = styled.div`
   margin: 24px 0px;
 `
 const Div = styled.div`
-  width: 80%;
+  max-width: 320px;
    margin: 30px auto 0px;
 `
 export const PasswordResetPage = () => {
