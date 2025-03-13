@@ -5,15 +5,16 @@ import Button from "../components/Button";
 const H1 = styled.h1`
   text-align: center;
   font-size: 37px;
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
   color: #313033;
+  line-height: normal;
 `;
 const Info = styled.p`
   text-align: center;
-  font-size: 22px;
-  max-width: 600px;
-  margin: auto;
+  font-size: 17px;
+  max-width: 300px;
+  margin: 20px auto;
 `;
 const VerifiedForm = styled.section`
   width: 100%;
@@ -25,7 +26,7 @@ const Asset = styled.img`
   margin: auto;
 `;
 const BtnComponent = styled.div`
-  max-width: 600px;
+  max-width: 300px;
   margin: auto;
 `;
 
