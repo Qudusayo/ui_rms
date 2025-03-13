@@ -20,9 +20,7 @@ const Quote = styled.p`
   color: #313033;
   text-align: center;
   font-weight: 400;
-   @media (max-width: 768px) {
- transform: translateY(-30%);
- }
+
 `
 const HeadingName = styled.span `
     font-size: 22px;
@@ -39,6 +37,9 @@ const Left = styled.img`
 //  position: absolute;
  transform: translateY(-50%);
  top: -50%;
+  @media (max-width: 768px) {
+ transform: translateY(-30%);
+ }
 `
 const Right = styled.img`
 //  position: absolute;
