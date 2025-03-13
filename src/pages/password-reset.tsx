@@ -1,3 +1,63 @@
+import styled from "styled-components";
+import InputContainer from "../components/input";
+import Button from "../components/Button";
+import { Link } from "react-router";
+
+const user = { name: "John Doe", email: "jondoe@gmail.com" };
+
+const Container = styled.section`
+  width: 90%;
+  max-width: 480px;
+  margin: auto;
+  box-sizing: border-box;
+`;
+const H1 = styled.h1`
+  text-align: center;
+  font-weight: 600;
+  font-size: 37px;
+  @media (max-width: 700px) {
+    font-size: 22px;
+  }
+`;
+const P = styled.p`
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+`;
+const CustomLink = styled(Link)`
+  text-decoration: none;
+  color: #2856c3;
+  font-size: 15px;
+  font-weight: 600;
+`;
+const ButtonWrapper = styled.div`
+  margin: 24px 0px;
+`;
+const Div = styled.div`
+  max-width: 320px;
+  margin: 30px auto 0px;
+`;
 export const PasswordResetPage = () => {
-  return <div>PasswordResetPage</div>;
+  return (
+    <Container>
+      <H1>University of Ibadan Result Management System</H1>
+      <P>Input your detail to have your password reset link sent directly to your mail</P>
+      <Div>
+        <InputContainer
+          name="password reser detail"
+          placeholder="Input your Matric number/ School email"
+        />
+        <ButtonWrapper>
+          <Button name="Send Details" handleClick={() => console.log("Send")} />
+        </ButtonWrapper>
+
+        <CustomLink to="/">RETURN TO LOG IN</CustomLink>
+      </Div>
+    </Container>
+  );
 };
+
+export default PasswordResetPage;
