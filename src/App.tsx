@@ -14,7 +14,7 @@ function App() {
       <Route path="confirm-email" element={<ConfirmEmailPage />} />
       <Route path="results" element={<Results />} />
       <Route path="dashboard" element={<DashboardPage />} />
-      <Route path="/details" element={<Details/>} />
+      <Route path="/details" element={<Details />} />
     </Routes>
   );
 }
