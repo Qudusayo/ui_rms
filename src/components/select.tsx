@@ -3,8 +3,7 @@ import styled from "styled-components"
 
 
 const Select = styled.select`
-    padding:9px;
-    // height: 3em;
+    padding: 9px;
     width: 100%;
     border: 1px solid #2856C3;
     border-radius: 8px;
@@ -17,27 +16,23 @@ const Select = styled.select`
      background-repeat: no-repeat;
      background-position-x: 97.9%;
      background-position-y: 50%;
-     background-size: 1%;
+     background-size: 2%;
      margin: 0.3em auto 2em;
-     padding: 0.53em
+    // padding: 0.53em
      outline: none;
-     padding-left : 20px;
+     padding-left : 10px;
      font-size: 13px;
 `
 
 const Label = styled.label`
      position:relative;
-     left: 20px;
+     left: 10px;
      top: 15px;
-     color: Blue;
+     color: #2856C3;
      background: #fff;
      padding: 0px 1px 0px 1px;
-     font size: 12px;
+     font-size: 12px;
 `
-
-
-
-
 const SelectComponent = () => {
     return (
         <>

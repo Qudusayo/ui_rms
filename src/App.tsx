@@ -1,5 +1,11 @@
+
+import SelectComponent from "./components/select"
+
 function App() {
-  return <></>;
+  return(
+    <SelectComponent/>
+  )
+  
 }
 
-export default App;
+export default  App
