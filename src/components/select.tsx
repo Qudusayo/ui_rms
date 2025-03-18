@@ -18,7 +18,6 @@ const Select = styled.select`
      background-position-y: 50%;
      background-size: 2%;
      margin: 0.3em auto 2em;
-    // padding: 0.53em
      outline: none;
      padding-left : 10px;
      font-size: 13px;
@@ -30,7 +29,7 @@ const Label = styled.label`
      top: 15px;
      color: #2856C3;
      background: #fff;
-     padding: 0px 1px 0px 1px;
+     padding: 0px 1px;
      font-size: 12px;
 `
 const SelectComponent = () => {
