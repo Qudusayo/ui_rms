@@ -18,12 +18,7 @@ const Quote = styled.p`
   text-align: center;
   font-weight: 400;
 `;
-const HeadingName = styled.span`
-  font-size: 22px;
-  padding: 10px;
-  display: inline-block;
-  margin: 10px;
-`;
+
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
@@ -48,22 +43,19 @@ const Right = styled.img`
 
 const QuoteContainer = () => {
   return (
-    <>
-      <HeadingName>Welcome, Ayoola AbdulQudus</HeadingName>
-      <MainCard>
-        <Container>
-          <Left src={quoteLeftIcon} alt="" />
-          <div>
-            <Quote>
-              "What makes a child gifted and talented may not always be good grades in school, but a
-              different way of looking at the world and learning."
-            </Quote>
-            <Author>Chuck Grassley</Author>
-          </div>
-          <Right src={quoteRightIcon} alt="" />
-        </Container>
-      </MainCard>
-    </>
+    <MainCard>
+      <Container>
+        <Left src={quoteLeftIcon} alt="" />
+        <div>
+          <Quote>
+            "What makes a child gifted and talented may not always be good grades in school, but a
+            different way of looking at the world and learning."
+          </Quote>
+          <Author>Chuck Grassley</Author>
+        </div>
+        <Right src={quoteRightIcon} alt="" />
+      </Container>
+    </MainCard>
   );
 };
 export default QuoteContainer;
