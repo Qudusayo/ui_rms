@@ -1,86 +1,75 @@
 import styled from "styled-components";
-import uiLogo from "../assets/uilogo.svg";
+import Logo from "../assets/uilogo.svg";
 import Home from "../assets/Home.svg";
 import Result from "../assets/Result.svg";
 import Shape from "../assets/Shape.svg";
-// import Navigate from "../assets/hamburger.svg";
 
+const UiLogo = styled.img`
+  color: white;
+  width: 100%;
+`;
+const LogoContainer = styled.div`
+  width: 120px;
+  margin: auto;
+`;
 
 const SideNav = styled.div`
-    width: 250px;
-    height: 100vh;
-    background-color: #2856C3;
-    padding: 30px 10px;
-`
+  width: 25%;
+  height: 100vh;
+  background-color: #2856c3;
+  padding: 30px 0px;
+  box-sizing: border-box;
+`;
 
 const Container = styled.div`
-    width: 200px;
-    height: 10vh;
-    padding: 30px 0px;
-    div:hover {
-    background-color: #E4F1FF;
+  width: 90%;
+  height: 10vh;
+  padding: 30px 0px;
+  gap: 100px;
+  div:hover {
+    background-color: #e4f1ff;
     border-raduis: 0px 8px 8px 0px;
-    width: 45vh;
-    }
-`
+    width: 90%;
+  }
+`;
 const Image = styled.img`
-    padding: 30px 0px;
-    margin: 0px 40px;
-    width: 60px;
-    height: 40px;
+  padding: 30px 0px;
+  width: 60px;
+  height: 40px;
+`;
 
-`
-
-
-
+const DIV = styled.div`
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+`;
 const SideNavPage = () => {
-    return (
-        <SideNav>
-            <div style={{
-                color: "white",
-                margin: "20px 0px",
-            }}>
-                {/* <Image src={Navigate} alt="hamburger" /> */}
+  return (
+    <SideNav>
+      <LogoContainer>
+        <UiLogo src={Logo} alt="logo" />
+      </LogoContainer>
 
-            </div>
-            <Image src={uiLogo} alt="logo" />
+      <Container>
+        <DIV>
+          <Image src={Home} alt="icon" />
+          <p>HOME</p>
+        </DIV>
 
-            <Container>
-                <>
-                    <div style={{
-                        display: "flex",
-                        alignItems: "center",
-                    }}>
-                        <Image src={Home} alt="icon" />
-                        <span>HOME</span>
-                    </div>
+        <DIV>
+          <Image src={Result} alt="mus" />
+          <p>RESULTS</p>
+        </DIV>
 
-                    <div style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "25px",
-                        margin: "50px 0px"
-                    }}>
-                        <Image src={Result} alt="mus" />
-                        <span>RESULTS</span>
-                    </div>
-
-                    <div style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "25px",
-                        margin: "50px 0px"
-                    }}>
-                        <Image src={Shape} alt="baam" />
-                        <span>COURSES</span>
-                    </div>
-                </>
-            </Container>
-                
-
-        </SideNav>
-    )
-}
-
+        <DIV>
+          <Image src={Shape} alt="baam" />
+          <p>COURSES</p>
+        </DIV>
+      </Container>
+    </SideNav>
+  );
+};
 
 export default SideNavPage;
